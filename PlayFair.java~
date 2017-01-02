@@ -69,12 +69,6 @@ public class PlayFair{
     return cipherText;
   }
   
-  /**
-   * Produces a plain text from a cipher text based on the matrix given
-   * @param encyptedText the ciphered text that is to be encryped
-   * @param matrix the matrix to be used to decrypt the text
-   * @return plain text produced after decrypting the encrypedText based on the matrix
-   */
   public static String createPlainText(String encryptedText, char[][] matrix){
     String plainText = "";
     
@@ -111,9 +105,9 @@ public class PlayFair{
   
   /**
    * Returns a two dimensional character array containing the positions of the characters provided in the matrix provided
-   * @param firstCharacter first character whose position in the matrix is to be determined
-   * @param secondCharacter second character whose position in the matrix is to be determined
-   * @return multidimensional array representation of position of charaters in the matrix
+   * @param firstCharacter
+   * @param secondCharacter
+   * @return
    */
   public static int[][] findCharPositionInMatrix(char firstCharacter, char secondCharacter, char[][] matrix){
     int[][] charPositions = new int[2][2];
